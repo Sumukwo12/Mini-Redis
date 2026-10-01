@@ -1,0 +1,9 @@
+# Compiled Erlang bytecode
+*.beam
+
+# Crash dumps
+erl_crash.dump
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
