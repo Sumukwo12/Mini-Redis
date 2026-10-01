@@ -4,7 +4,7 @@ A lightweight, concurrent in-memory Key-Value store with TTL auto-expiration bui
 
 ---
 
-## 📖 What Does This Project Do?
+## What Does This Project Do?
 
 In modern web applications (like Netflix, Instagram, or Twitter), constantly querying a disk-based database (PostgreSQL, MySQL) for small, frequent checks like user sessions, login tokens, or rate limits creates massive bottlenecks.
 
@@ -17,7 +17,7 @@ This project implements that exact system natively inside Erlang without requiri
 
 ---
 
-## 📂 Project Architecture & Files
+## Project Architecture & Files
 
 | File | Type | Purpose |
 | :--- | :--- | :--- |
@@ -32,7 +32,7 @@ This project implements that exact system natively inside Erlang without requiri
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Interactive CLI Mode (Recommended)
 
@@ -127,7 +127,7 @@ $ erl
 
 ---
 
-## 🧠 Core Erlang Concepts Learned
+## Core Erlang Concepts Learned
 
 ### 1. State Without Mutation (Tail-Recursion)
 Variables in Erlang are strictly immutable. To maintain state, an Erlang process calls itself in an infinite tail-recursive loop, passing the updated state dictionary into the next iteration:
